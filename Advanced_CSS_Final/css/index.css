@@ -1,0 +1,234 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Yellowtail');
+	
+@font-face {
+    font-family: "futura-pt";
+    src: url("https://use.typekit.net/af/309dfe/000000000000000000010091/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/309dfe/000000000000000000010091/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/309dfe/000000000000000000010091/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-family: "futura-pt";
+    src: url("https://use.typekit.net/af/9b05f3/000000000000000000013365/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/9b05f3/000000000000000000013365/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/9b05f3/000000000000000000013365/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family: "futura-pt";
+    src: url("https://use.typekit.net/af/ae4f6c/000000000000000000010096/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"), url("https://use.typekit.net/af/ae4f6c/000000000000000000010096/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"), url("https://use.typekit.net/af/ae4f6c/000000000000000000010096/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");
+    font-style: normal;
+    font-weight: 300;
+}
+
+html {
+  /*background-color: rgba(211,221,221,0.5);*/
+	/*background-image: url("../images/Confetti-Transparent.png");*/
+	background-position: top center;
+}
+	
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  position: relative;
+  margin: 0;
+}
+	
+/*Navigation Start*/	
+#mySidenav a {
+  position: absolute;
+  left: -95px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 180px;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: rgba(255,255,255,1.00);
+  border-radius: 0 5px 5px 0;
+  font-family: 'futura-pt', helvetica, san-serif;
+}
+#mySidenav a:hover {
+  left: 0;
+}
+#home {
+  top: 20px;
+  background-color: rgba(0, 151, 194, 1.00);
+}
+#about {
+  top: 80px;
+  background-color: rgba(233, 71, 32, 1.00);
+}
+#portfolio {
+  top: 140px;
+  background-color: rgba(251, 190, 0, 1.00);
+}
+#contact {
+  top: 200px;
+  background-color: rgba(20, 47, 86, 1.00);
+}
+/*Navigation End*/
+
+/*Main Content Start*/	
+	
+	/*Test*/
+	.test {
+		height: 900px;
+	}
+	
+.box {
+    display: grid;
+    grid-template-rows: 100px auto 100px 100px 100px;
+    grid-gap: 0.5em;
+    justify-content: center;
+    /*margin: 75px auto 0 auto;*/
+	/*width: 80%;*/
+	margin: 75px auto;
+	transform: rotate(-30deg);
+}	
+.pro {
+    writing-mode: vertical-lr;
+	font-size: 2em;
+    grid-column: 2;
+    grid-row: 1 / span 2;
+	justify-self: left;
+	font-weight: 800;
+	color: rgba(10,10,10,0.9);
+	font-family: 'futura-pt', helvetica, san-serif;
+}	
+.design {
+	font-family: 'Yellowtail', cursive;
+    font-size: 3em;
+    grid-column: 1;
+    grid-row: 2;
+	padding-right: 0.5em;
+	color: rgba(20, 47, 86, 1.00);
+}	
+.dave {
+    font-size: 3em;
+    text-transform: uppercase;
+    grid-column: 2;
+    grid-row: 2;
+	padding-left: 0.25em;
+	padding-top: 60px;
+	color: rgba(233, 71, 32, 1.00);
+	font-family: 'futura-pt', helvetica, san-serif;
+}
+.web {
+    font-size: 1.5em;
+    writing-mode: vertical-lr;
+    grid-row: 2 / span 5;
+    grid-column: 1;
+	margin: 115px 60px 0;
+	font-weight: 600;
+	color: rgba(10,10,10,0.9);
+}	
+.web h4 {
+	border-left: 5px solid rgba(251, 190, 0, 1.00);
+	font-family: 'futura-pt', helvetica, san-serif;
+}	
+.logo {
+    font-size: 1.5em;
+    writing-mode: vertical-lr;
+    grid-row: 3 / span 5;
+    grid-column: 2;
+	justify-self: right;
+	margin: 0;
+	font-weight: 600;
+	color: rgba(10,10,10,0.9);
+}	
+.logo h4 {
+	border-left: 5px solid rgba(0, 151, 194, 1.00);
+	font-family: 'futura-pt', helvetica, san-serif;
+}
+/*Main Content End*/
+	
+/*Eliminate Chrome Automatic Margin*/
+h1 {
+	margin-block-start: 0;
+	margin-block-end: 0;
+}	
+	
+/*Footer-Navigation Start*/
+.footer {
+	margin-top: 175px;
+	position: absolute;
+	/*bottom: 0;*/
+	display: flex;
+	justify-content: left;
+	width: 1366px;
+	font-family: 'futura-pt', helvetica, san-serif;
+}
+.footer div {
+	width: 150px;
+	margin: 20px 20px 0 20px;
+	text-align: center;
+	line-height: 75px;
+	font-size: 20px;
+	font-weight: 600;
+}	
+.footer a {
+   color: rgba(255,255,255,1.00);
+}	
+#copy {
+  font-weight: 400;
+	font-size: 0.9em;
+}	
+#home2 {
+  top: 20px;
+  border-radius: 7px 7px 0 0;
+  background-color: rgba(0, 151, 194, 1.00);
+}
+#about2 {
+  top: 80px;
+  border-radius: 7px 7px 0 0;
+  background-color: rgba(233, 71, 32, 1.00);
+}
+#portfolio2 {
+  top: 140px;
+  border-radius: 7px 7px 0 0;
+  background-color: rgba(251, 190, 0, 1.00);
+}
+#contact2 {
+  top: 200px;
+  border-radius: 7px 7px 0 0;
+  background-color: rgba(20, 47, 86, 1.00);
+}
+	
+/*Social Media Icons Start*/
+.fa {
+  padding: 12px;
+  font-size: 19px;
+  width: 150px;
+  height: auto;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}		
+.fa-facebook {
+  background: rgba(59,89,152,1.0);
+  color: rgba(255,255,255,1.00);
+  border-radius: 5px;
+}
+.fa-linkedin {
+  background: rgba(14,118,168,0.6);
+  color: rgba(255,255,255,1.00);
+  border-radius: 5px;
+}
+/*Social Media Icons End*/
+/*Footer-Navigation End*/
+	
+a {
+	text-decoration: none;
+	font-family: 'futura-pt', helvetica, san-serif;
+	color: rgba(255,255,255,1.00);
+}
+
+a:hover {
+	color: rgba(255, 255, 25, 0.9);
+}
+	
